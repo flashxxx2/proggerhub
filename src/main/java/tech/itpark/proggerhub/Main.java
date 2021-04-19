@@ -1,6 +1,6 @@
 package tech.itpark.proggerhub;
 
-import tech.itpark.proggerhub.di.Container;
+import tech.itpark.di.Container;
 import tech.itpark.proggerhub.repository.UserRepository;
 import tech.itpark.proggerhub.service.UserService;
 
@@ -10,5 +10,4 @@ public class Main {
         container.register(UserRepository.class, UserService.class);
         container.wire();
     }
-
 }
